@@ -169,7 +169,7 @@ const Footer = () => {
       </div>
       <div className={styles.footerInfo}>
         <p className={styles.subtitle}>hello@serunicreative.com</p>
-        <p className={styles.subtitle}>WhatsApp : 0813-2020-2002</p>
+        <p className={styles.subtitle}>WhatsApp : <a href="https://bit.ly/serunikontak" target="_blank" > 0813-2020-2002</a></p>
         <p className={styles.subtitle}>or pop us a visit at :</p>
 
         <div className={styles.socialMedia}>

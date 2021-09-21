@@ -137,6 +137,9 @@ export default function Home() {
             <img src="/img/clients.png" alt="Our Clients" />
           </div>
         </section>
+        <a className={styles.wa} name="wa" href="https://bit.ly/serunikontak" target="_blank">
+          <img src="/img/wa.png" alt="wa button"/>
+        </a>
       </section>
       <Footer />
     </div>
