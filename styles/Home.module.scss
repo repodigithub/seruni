@@ -180,6 +180,23 @@
         }
       }
     }
+    .wa{
+      position : fixed;
+      bottom : 20px;
+      right: 20px;
+      // height: 70px;
+      z-index: 9999;
+      // display:flex;
+      // width: 90px;
+      text-decoration: none;
+      -webkit-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      img{
+        height: 70px;
+        width: 94px;
+      }
+    }
   }
 }
 
