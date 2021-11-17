@@ -6,6 +6,7 @@ import ImageSlider from '../components/ImageSlider/ImageSlider'
 import MetaTags from '../components/MetaTags/MetaTags'
 
 import { useState } from 'react'
+import Freebies from '../components/Freebies/Freebies'
 
 // import ReactGA from 'react-ga'
 // ReactGA.initialize('UA-1229204270-1')
@@ -13,6 +14,7 @@ import { useState } from 'react'
 
 export default function Home() {
   const [sidebar, setSidebar] = useState(false)
+  const [openFreebies, setOpenFreebies] = useState(false)
 
   const handleToggleSidebar = () => {
     setSidebar(!sidebar)
@@ -20,6 +22,14 @@ export default function Home() {
 
   const closeSidebar = () => {
     setSidebar(false)
+  }
+
+  const handleToggleFreebies = () => {
+    setOpenFreebies(!openFreebies)
+  }
+
+  const closeFreebies = () => {
+    setOpenFreebies(false)
   }
 
   return (
@@ -137,6 +147,15 @@ export default function Home() {
             <img src="/img/clients.png" alt="Our Clients" />
           </div>
         </section>
+        {/* Freebie Floating Button */}
+        <Freebies 
+          toggleFreebies={handleToggleFreebies} 
+          closeFreebies={closeFreebies} 
+          isOpen={openFreebies}
+        />
+        <a className={styles.wa} name="wa" href="https://bit.ly/serunikontak" target="_blank">
+          <img src="/img/wa.png" alt="wa button"/>
+        </a>
       </section>
       <Footer />
     </div>
